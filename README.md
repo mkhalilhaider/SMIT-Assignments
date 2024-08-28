@@ -22,8 +22,8 @@ This repository is a way for me to track my learning journey, keep my work organ
 
 As the course curriculum is extensive, expect to see folders and assignments on a variety of topics beyond just HTML, CSS, and JavaScript. Some upcoming topics may include:
 
--TypeScript
--FireBase
+- TypeScript
+- FireBase
 - React.js
 - Node.js
 - MongoDB
