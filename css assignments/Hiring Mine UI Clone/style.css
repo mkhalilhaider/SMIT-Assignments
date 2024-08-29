@@ -1,0 +1,230 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+/* nav bar */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 65px;
+  width: 100%;
+  padding: 26px 2px;
+}
+/* part 1 */
+.nav-logo {
+  margin-left: 2vw;
+  height: 3.2vw;
+  width: 15vw;
+}
+
+.logo {
+  background-image: url(./assets/Hiring\ Mine\ Logo.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 3.2vw;
+  width: 15vw;
+  cursor: pointer;
+}
+/* part 2 */
+.nav-links {
+  display: flex;
+  gap: 2vw;
+  color: #313131;
+  font-size: 1.3vw;
+  cursor: pointer;
+  margin-right: 80px;
+}
+
+.nav-link-color {
+  color: #6851ff;
+}
+/* part 3 */
+.dark-light-toggle {
+  margin-right: 2vw;
+  font-size: 2.5vw;
+  font-weight: 200;
+  color: #313131;
+  cursor: pointer;
+}
+
+/* section 1 */
+
+.main-first-section {
+  display: flex;
+  justify-content: center;
+}
+
+/* heading and text */
+.content {
+  margin-top: 65px;
+  max-width: 62%;
+  width: 100%;
+}
+
+.content h1 {
+  font-weight: 800;
+  font-size: 6.5vw;
+  line-height: 8vw;
+  text-align: center;
+  letter-spacing: -0.06vw;
+  background: linear-gradient(106.43deg, #522fd4, #6bdcff 95.12%);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.content p {
+  margin-top: 22px;
+  font-weight: 400;
+  font-size: 1.7vw;
+  line-height: 2vw;
+  text-align: center;
+}
+
+/* search bar input field */
+.search-input-container {
+  position: relative;
+  margin: 20px auto;
+  width: 75%;
+}
+
+.search-input-container input:hover {
+  border-color: #313131;
+  transition: ease 0.15s;
+}
+
+.search-input-container i {
+  position: absolute;
+  top: 30%;
+  right: 10px;
+  color: #999;
+  pointer-events: none;
+}
+
+.search-input-container input {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+.search-input-container label {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  font-size: 16px;
+  color: #999;
+  pointer-events: none;
+  background-color: white;
+  padding: 0 5px;
+  transition: all 0.2s ease;
+}
+
+.search-input-container input:focus {
+  border-color: #6851ff;
+}
+
+.search-input-container input:focus ~ label,
+.search-input-container input:not(:placeholder-shown) ~ label {
+  top: -14px;
+  left: 10px;
+  font-size: 14px;
+  color: #6851ff;
+  padding: 0 5px;
+}
+
+.search-input-container input:focus::placeholder,
+.search-input-container input:not(:placeholder-shown)::placeholder {
+  color: transparent;
+}
+
+/* find job button */
+
+.find-job {
+  display: block;
+  margin: 20px auto;
+  padding: 15px 30px;
+  background-color: #6851ff;
+  color: white;
+  font-size: 1.4vw;
+  font-weight: 700;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  box-shadow: 3px 4px 5px rgba(0, 0, 0, 0.2);
+}
+.find-job:hover {
+  background-color: #40269e;
+  transition: ease-in 0.35s;
+}
+
+/* popular searches section */
+
+.popular-searches {
+  margin-top: 10px;
+  text-align: center;
+}
+
+.popular-searches h2 {
+  margin-bottom: 6px;
+  padding: 15px 0px;
+  font-size: 2.4vw;
+  font-weight: 700;
+  letter-spacing: -0.06vw;
+  background: linear-gradient(180deg, #4d3bdb 0%, #9747ff 100%);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.top-search-btns {
+  font-size: 1.1vw;
+  display: flex;
+  justify-content: center;
+  gap: 2vw;
+  flex-wrap: wrap;
+}
+
+.tsb {
+  padding: 6px 12px;
+  color: #6851ff;
+  font-size: 1vw;
+  font-weight: 800;
+  border: 1px solid #8c7df3;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.tsb:hover {
+  border: 1px solid #6851ff;
+  background-color: whitesmoke;
+  box-shadow: inset 3px 3px 6px rgba(0, 0, 0, 0.1);
+  transition: ease-in-out 0.2s;
+}
+
+/* first section image  */
+
+.first-sec-img {
+  margin-top: 10px;
+  height: 300px;
+  width: 100%;
+}
+
+.fsi {
+  background-image: url(./assets/hero\ section\ image.png);
+  height: 100%;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
