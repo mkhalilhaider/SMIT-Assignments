@@ -21,7 +21,6 @@ document.write(
     a
 );
 
-
 // q2
 var a = 2;
 var b = 1;
@@ -34,16 +33,21 @@ var step4 = b--; // Post-decrement: b becomes 0 after this line
 var result = step1 - step2 + step3 + step4;
 
 document.write(
-  "<b>--a</b> is: " + step1 +
-  " <br><b>--b</b> is: " + step2 +
-  "<br><b>++b</b> is: " + step3 +
-  "<br><b>b--</b> is: " + step4 +
-  "<br><br>Final Result: " + result
+  "<b>--a</b> is: " +
+    step1 +
+    " <br><b>--b</b> is: " +
+    step2 +
+    "<br><b>++b</b> is: " +
+    step3 +
+    "<br><b>b--</b> is: " +
+    step4 +
+    "<br><br>Final Result: " +
+    result
 );
 
 // q3
-let name=prompt("Enter your name");
-alert("Welcome "+ name+ " on our wesite");
+let name = prompt("Enter your name");
+alert("Welcome " + name + " on our wesite");
 
 // q5
 let num = +prompt("Enter the number");
@@ -69,9 +73,8 @@ if (num > 0 || num < 0) {
   document.write(5 + "x7=" + 5 * 7 + "<br>");
   document.write(5 + "x8=" + 5 * 8 + "<br>");
   document.write(5 + "x9=" + 5 * 9 + "<br>");
-  document.write(5 + "x10=" + 5 * 10 + "<br>");
+  document.write(5 + "x10=" + 5 * 10 + "<br><br><br>");
 }
-
 
 // q6
 let sub1 = prompt("Enter the first subject");
@@ -79,7 +82,6 @@ let sub2 = prompt("Enter the second subject");
 let sub3 = prompt("Enter the third subject");
 
 let totalMarks = 100;
-
 let obt1 = +prompt("Enter the obtained marks for " + sub1);
 let obt2 = +prompt("Enter the obtained marks for " + sub2);
 let obt3 = +prompt("Enter the obtained marks for " + sub3);
@@ -87,6 +89,9 @@ let obt3 = +prompt("Enter the obtained marks for " + sub3);
 let perc1 = (obt1 / totalMarks) * 100;
 let perc2 = (obt2 / totalMarks) * 100;
 let perc3 = (obt3 / totalMarks) * 100;
+
+let total = totalMarks * 3;
+let total_obtain = obt1 + obt2 + obt3;
 
 document.write(`
   <table border="1">
@@ -101,7 +106,7 @@ document.write(`
       <td>${totalMarks}</td>
       <td>${obt1}</td>
       <td>${perc1}%</td>
-    </tr>chap 6-9
+    </tr>
     <tr>
       <td>${sub2}</td>
       <td>${totalMarks}</td>
@@ -113,6 +118,12 @@ document.write(`
       <td>${totalMarks}</td>
       <td>${obt3}</td>
       <td>${perc3}%</td>
+    </tr>
+    <tr>
+      <th><center>-<center/></th>
+      <th>${total}</th>
+      <th>${total_obtain}</th>
+      <th>${(total_obtain / total) * 100}%</th>
     </tr>
   </table>
 `);
