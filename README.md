@@ -4,9 +4,9 @@ Welcome to my repository for all assignments and projects related to the Web and
 
 ## Repository Structure
 
-- **HTML-Assignments/**: All assignments related to HTML.
-- **CSS-Assignments/**: All assignments focused on CSS.
-- **JS-Assignments/**: JavaScript-related assignments.
+- **[HTML Assignments](./HTML-Assignments/)**: All assignments related to HTML.
+- **[CSS Assignments](./CSS-Assignments/)**: All assignments focused on CSS.
+- **[JavaScript Assignments](./JS-Assignments/)**: JavaScript-related assignments.
 - **More Modules Coming Soon!**: As the course progresses, I'll be adding more folders for new subjects like TypeScript, React, Next JS, Node.js, MongoDB, and more.
 
 ## How to Navigate
@@ -40,4 +40,4 @@ This work is primarily for educational purposes. You are welcome to explore and 
 
 ## Contact
 
-If you have any questions, or suggestions, or want to connect, feel free to reach out to me via GitHub.
+If you have any questions, or suggestions, or want to connect, feel free to reach out to me via GitHub  OR [![LinkedIn](https://img.shields.io/badge/-LinkedIn-0A66C2?style=flat&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/mkhalilhaider/)
