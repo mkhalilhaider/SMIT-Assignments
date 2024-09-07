@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>Registration Form</title>
+
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        section {
+            margin: 0px auto;
+            width: 70%;
+        }
+
+        .container {
+            text-align: center;
+            padding: 20px;
+        }
+
+        .header {
+            margin-bottom: 20px;
+        }
+
+        .header img {
+            width: 260px;
+        }
+
+        .form-section {
+            top: 100px;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            gap: 40px;
+        }
+
+        .social-icons {
+            display: flex;
+            gap: 15px;
+        }
+
+        .social-icons i {
+            font-size: 20px;
+            color: #0d6db7;
+        }
+
+        .title {
+            text-align: left;
+        }
+
+        .title h1 {
+            font-size: 36px;
+            color: #333;
+        }
+
+        .title p {
+            text-align: center;
+            font-size: 18px;
+            color: #666;
+        }
+
+        .portal-button {
+            background-color: white;
+            border: 2px solid #0d6db7;
+            padding: 10px 25px;
+            border-radius: 20px;
+            color: #0d6db7;
+            cursor: pointer;
+        }
+
+        .nav-buttons {
+            margin: 20px 0;
+            display: flex;
+            justify-content: center;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 10px;
+        }
+
+        .nav-buttons button {
+            background-color: #f8f9fa;
+            border: 1px solid #dee2e6;
+            padding: 10px 20px;
+            color: #0d6db7;
+            cursor: pointer;
+        }
+
+        form {
+            margin: 40px 0;
+            text-align: left;
+        }
+
+        .form-group {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .form-column {
+            width: 45%;
+        }
+
+        label {
+            color: #0d6db7;
+            font-size: 16px;
+        }
+
+        input {
+            width: 100%;
+            padding: 12px 15px;
+            margin: 10px 0;
+            border-radius: 10px;
+            border: 1px solid #ccc;
+            outline: none;
+        }
+
+        .submit-btn {
+            width: 100%;
+            background-color: #1f84d0;
+        }
+
+        .declaration-list {
+            text-align: left;
+            margin-top: 30px;
+        }
+
+        .declaration-list ol {
+            list-style-type: decimal;
+            padding-left: 20px;
+        }
+
+        .declaration-list li {
+            margin-bottom: 10px;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <section class="container">
+        <div class="header">
+            <img src="./logo.22bf709605809177256c.png" alt="SWIT Logo">
+        </div>
+        <div class="form-section">
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+            </div>
+            <div class="title">
+                <h1>SMIT Registration Form</h1>
+                <p>Education - Services - Registration</p>
+            </div>
+            <div class="portal">
+                <button class="portal-button">
+                    <i class="fas fa-user-graduate"></i> Student Portal
+                </button>
+            </div>
+        </div>
+
+        <div class="nav-buttons">
+            <button>Registration</button>
+            <button>Download ID Card</button>
+            <button>Results</button>
+        </div>
+
+        <form action="">
+            <div class="form-group">
+                <div class="form-column">
+                    <label for="country">Select Country</label>
+                    <input type="text" id="country" placeholder="Enter your country">
+
+                    <label for="course">Select Course/Event</label>
+                    <input type="text" id="course" placeholder="Select course or event">
+
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" placeholder="Full name">
+
+                    <label for="dob">Date of Birth</label>
+                    <input type="date" id="dob" placeholder="Date of birth">
+
+                    <label for="cnic">CNIC</label>
+                    <input type="number" id="cnic" placeholder="CNIC">
+
+                    <label for="email">Email</label>
+                    <input type="email" id="email" placeholder="Email">
+                </div>
+
+                <div class="form-column">
+                    <label for="city">Select City</label>
+                    <input type="text" id="city" placeholder="Select city">
+
+                    <label for="proficiency">Computer Proficiency</label>
+                    <input type="text" id="proficiency" placeholder="Computer proficiency">
+
+                    <label for="father_name">Father's Name</label>
+                    <input type="text" id="father_name" placeholder="Father's name">
+
+                    <label for="phone">Phone</label>
+                    <input type="number" id="phone" placeholder="Phone number">
+
+                    <label for="father_cnic">Father's CNIC (Optional)</label>
+                    <input type="number" id="father_cnic" placeholder="Father's CNIC">
+
+                    <label for="gender">Select Gender</label>
+                    <input type="text" id="gender" placeholder="Select gender">
+                </div>
+            </div>
+
+            <label for="address">Address</label>
+            <input type="text" class="full-width" id="address" placeholder="Enter your address">
+
+            <label for="qualification">Last Qualification</label>
+            <input type="text" class="full-width" id="qualification" placeholder="Last qualification">
+
+            <label for="laptop">Do you have a Laptop?</label>
+            <input type="text" class="full-width" id="laptop" placeholder="Yes or No">
+
+            <label for="pic">Upload Picture</label>
+            <input type="file" class="full-width" id="pic">
+
+            <div class="declaration-list">
+                <ol>
+                    <li>I solemnly declare that the information provided is accurate to the best of my knowledge.</li>
+                    <li>I agree to abide by the regulations and policies of SWIT during my time in the program.</li>
+                    <li>Any violation of the policies may result in the cancellation of my admission at any time.</li>
+                    <li>Upon course completion, I will fulfill the project requirements as per SWIT's guidelines.</li>
+                    <li>Female students are required to wear abaya/hijab during classes.</li>
+                </ol>
+            </div>
+
+
+            <input type="submit" class="submit-btn" value="Submit">
+        </form>
+
+    </section>
+
+</body>
+
+</html>
