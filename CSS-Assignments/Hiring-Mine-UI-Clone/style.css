@@ -228,3 +228,102 @@ body {
   background-repeat: no-repeat;
   background-size: contain;
 }
+
+
+/* Card Container */
+.get-hired-cards {
+  width: 95%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap; 
+}
+
+/* Card Styling */
+.card {
+  border: 1px solid white;
+  position: relative;
+  width: 20vw;
+  height: 200px; 
+  max-width: 300px; 
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  transition: box-shadow 0.3s ease-in;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  justify-content: center; 
+  text-align: center;
+  padding: 10px;
+  margin: 10px;
+  cursor: pointer;;
+}
+
+.card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  background: linear-gradient(
+    to bottom,
+    rgba(52, 24, 196, 0.176) 0%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  border-radius: 10px 10px 0 0;
+  z-index: 1;
+}
+
+/* Content-content */
+.card h2 {
+  font-size: 1.5rem;
+  color: #6851ff;
+  position: relative;
+  z-index: 2;
+  margin: 0;
+}
+
+.card i {
+  position: relative;
+  z-index: 2;
+  color: #6851ff;
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin: 8px 0;
+}
+
+.card p {
+  position: relative;
+  z-index: 2;
+  color: #313131;
+  font-size: 0.9rem;
+  margin: 0;
+}
+
+/* Card Hover Effect */
+.card:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+}
+
+/* card responsive */
+@media (max-width: 768px) {
+  .card {
+    width: 90%;
+    max-width: 100%;
+  }
+
+  .card h2 {
+    font-size: 1.2rem;
+  }
+
+  .card i {
+    font-size: 1rem;
+  }
+
+  .card p {
+    font-size: 0.8rem;
+  }
+}
