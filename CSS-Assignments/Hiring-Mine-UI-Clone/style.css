@@ -20,6 +20,7 @@ body {
   width: 100%;
   padding: 26px 2px;
 }
+
 /* part 1 */
 .nav-logo {
   margin-left: 2vw;
@@ -35,6 +36,7 @@ body {
   width: 15vw;
   cursor: pointer;
 }
+
 /* part 2 */
 .nav-links {
   display: flex;
@@ -48,6 +50,7 @@ body {
 .nav-link-color {
   color: #6851ff;
 }
+
 /* part 3 */
 .dark-light-toggle {
   margin-right: 2vw;
@@ -165,6 +168,7 @@ body {
   cursor: pointer;
   box-shadow: 3px 4px 5px rgba(0, 0, 0, 0.2);
 }
+
 .find-job:hover {
   background-color: #40269e;
   transition: ease-in 0.35s;
@@ -227,25 +231,53 @@ body {
   width: 100%;
   background-repeat: no-repeat;
   background-size: contain;
+  background-position: center;
 }
 
+/* section 2,3,4 and 5------ text content styling */
 
+.sections-text {
+  margin-top: 40px;
+  padding: 60px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6vw;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+
+.sections-text h1 {
+  font-size: 2.8rem;
+  color: #6851ff;
+}
+
+.heading-span {
+  color: #3f3f3f;
+}
+
+.sections-text p {
+  color: #313131;
+  font-size: larger;
+  font-weight: 400;
+}
+
+/* section 2 and 4 Cards Styling */
 /* Card Container */
-.get-hired-cards {
-  width: 95%;
+.card-container {
+  width: 90%;
   margin: 0 auto;
   display: flex;
   justify-content: space-around;
-  flex-wrap: wrap; 
+  flex-wrap: wrap;
 }
 
-/* Card Styling */
 .card {
   border: 1px solid white;
   position: relative;
   width: 20vw;
-  height: 200px; 
-  max-width: 300px; 
+  height: 200px;
+  max-width: 300px;
   background: white;
   border-radius: 10px;
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
@@ -253,12 +285,13 @@ body {
   overflow: hidden;
   display: flex;
   flex-direction: column;
-  align-items: center; 
-  justify-content: center; 
+  align-items: center;
+  justify-content: center;
   text-align: center;
   padding: 10px;
   margin: 10px;
-  cursor: pointer;;
+  cursor: pointer;
+  gap: 1rem;
 }
 
 .card::before {
@@ -277,7 +310,7 @@ body {
   z-index: 1;
 }
 
-/* Content-content */
+/* Card-content */
 .card h2 {
   font-size: 1.5rem;
   color: #6851ff;
@@ -301,11 +334,28 @@ body {
   color: #313131;
   font-size: 0.9rem;
   margin: 0;
+  font-weight: 400;
 }
 
 /* Card Hover Effect */
 .card:hover {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+}
+
+/* third section */
+.third-sec-img {
+  margin: 0px auto;
+  height: 200px;
+  width: 90%;
+}
+
+.tsi {
+  background-image: url(./assets/second\ section\ img.webp);
+  height: 100%;
+  width: 100%;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
 /* card responsive */
