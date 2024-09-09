@@ -413,6 +413,7 @@ body {
 
 /* section 6 */
 .section-6 {
+  position: relative;
   margin: 40px auto;
   width: 90%;
   padding: 30px;
@@ -470,6 +471,111 @@ body {
   background-color: white;
   border: 1px solid #6851ff;
   border-radius: 20px;
+}
+
+.sec6-line {
+  width: 2.6px;
+  height: 140px;
+  background: rgb(104, 81, 255);
+  position: absolute;
+  top: 30%;
+  border-radius: 10px;
+}
+
+/* footer section */
+
+.last-section {
+  color: white;
+  width: 100%;
+  height: auto;
+  background: linear-gradient(to bottom, #4e3bdc, #9546fe);
+  padding: 2rem 0;
+}
+
+.footer-top {
+  margin: 0 auto;
+  width: 94%;
+  display: flex;
+  justify-content: space-between;
+  padding: 1vw;
+}
+
+.footer-logo {
+  background-image: url("./assets/footer logo.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: auto;
+  height: 2rem;
+}
+
+.footer-top-left p {
+  margin-top: 10px;
+  width: 45%;
+  font-size: 0.95rem;
+  font-weight: 400;
+  line-height: 1.4rem;
+}
+
+.footer-top-right h3 {
+  font-weight: 600;
+  font-size: 1.5rem;
+  line-height: 3rem;
+}
+
+.footer-email {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+.footer-middle {
+  margin: 0 auto;
+  width: 94%;
+  padding: 0.5rem 1rem;
+  text-align: left;
+}
+
+.footer-middle h3 {
+  font-weight: 500;
+  font-size: 1.4rem;
+  line-height: 4rem;
+}
+
+.footer-icons {
+  font-size: 1.2rem;
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.footer-line {
+  width: 100%;
+  height: 2px;
+  background-color: white;
+  margin: 1rem 0px;
+}
+
+.footer-bottom {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 10px;
+}
+
+.footer-bottom p {
+  font-size: 1rem;
+}
+
+.policy-text:hover {
+  text-decoration: underline;
+  cursor: pointer;
 }
 
 /* card responsive */
