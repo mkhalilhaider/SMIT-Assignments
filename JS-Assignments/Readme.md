@@ -12,7 +12,7 @@ This folder contains JavaScript assignments, organized by chapters. Each chapter
 - [Chapter 9-11](./chap9-11/)
 - [Chapter 12-13](./chap12-13/)
 - [Chapter 14-16](./chap14-16/)
-- [Chapter 17-20](./chap17-12/)
+- [Chapter 17-20](./chap17-20/)
 
 ## Chapter Questions
 
